@@ -14,7 +14,7 @@ const Scroll = ({ children, className, scrollActive, setScrollActive }) => {
          const scroll = scrollRef.current;
          if (scroll) {
             const rect = scroll.getBoundingClientRect();
-            setScrollActive(rect.top <= 10 && rect.bottom > 400);
+            setScrollActive(rect.top <= 400 /* && rect.bottom > 400 */);
          }
       };
 
