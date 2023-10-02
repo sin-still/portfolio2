@@ -28,7 +28,7 @@ const Scroll = ({ children, className, scrollActive, setScrollActive }) => {
    return (
       <div
          ref={scrollRef}
-         className={`${className} ${scrollActive ? 'scrollActive' : ''}`}
+         className={`${className} flex ${scrollActive ? 'scrollActive' : ''}`}
       >
          {children}
       </div>
