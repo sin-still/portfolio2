@@ -4,6 +4,7 @@ import Header from './components/Header'
 import MainPage from './components/MainPage';
 import About from './components/About';
 import Skills from './components/Skills';
+import Project from './components/Project';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <MainPage />
       <About />
       <Skills />
+      <Project />
     </div>
   );
 }

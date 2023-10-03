@@ -1,0 +1,132 @@
+@font-face {
+   font-family: 'omyu_pretty';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+   font-weight: normal;
+   font-style: normal;
+}
+.swiper-pagination-horizontal{
+   
+}
+.swiper-slide{
+   position: relative;
+   height: 95%;
+}
+
+.mySwiper{
+   /* font-family: 'omyu_pretty'; */
+   z-index: 3;
+   width: 100%;
+   height: 88rem;
+   top: 0;
+   left: 0;
+   margin-top: 22rem;
+   background: #924e2c15;
+   padding-bottom: 2rem;
+   
+   
+   
+}
+.project-title{
+   height: 10%;
+   background: #924e2c15;
+   text-align: center;
+   padding: 2rem 0;
+   font-size: 2.5rem;
+   color: #4b4b4b;
+   border-bottom: 1px solid #fff;
+   
+}
+.project-item{
+   display: flex;
+   height: 80rem;
+   
+   .project-imgBox{
+      width: 40%;
+      background: #fff;
+      height: 100%;
+      .project-img{
+         height: 55rem;
+         box-shadow: 0 0 15px #ccc;
+         &.project-img::-webkit-scrollbar{
+            display: none;
+         }
+         margin: 0 auto;
+         width: 80%;
+         padding: 0 4rem;
+         overflow: scroll;
+         
+         a{
+            display: block;
+            
+            img{
+               width: 100%;
+               
+            }
+         }
+      }
+   }
+   .project-info{
+      width: 60%;
+      padding: 5rem 10rem;
+      background: #f7e3d9;
+      
+      /* 인포타이틀 */
+      .infoTitle{
+         font-weight: 600;
+         color: #000;
+         font-size: 2rem;
+         display: inline-block;
+         position: relative;padding: 5px 0px;
+         padding-left: .5rem;
+         margin-top: 1rem;
+         
+         &::after{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            content: "";
+            width: 140%;
+            height: 2px;
+            border-radius: 50%;
+            background: #fff;
+         }
+      }
+      /* 플렉스박스 */
+      .flexBox{
+         display: flex;
+         .flexItem{
+            width: 50%;
+         }
+      }
+      /* 인포아이템 */
+      .info-item{
+         display: flex;
+         padding: 2rem 1rem;
+         font-size: 1.7rem;
+         
+         img{
+            padding: 1rem;
+            width: 6.4rem;
+            height: 6.4rem;
+         }
+      }
+      /* 링크박스 */
+      .linkBox{
+         width: 100%;
+         padding-top: 2rem;
+         text-align: right;
+         margin-right: 5rem;
+         .infoTitle{
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            font-size: 2rem;
+            padding-right: 1rem;
+            transition: .2s;
+            &:hover{
+               transform: rotate(-10deg);
+            }
+         }
+      }
+   }
+}

@@ -380,6 +380,32 @@
       }
     }
   }
+  .Project{
+    height: 150rem;
+    /* background: #f8efe4; */
+    background: #fff;
+    justify-content: start;
+    flex-direction: column;
+    position: relative;
+    z-index: 3;
+    padding-top: 9rem;
+    
+    >h2{
+      position: absolute;
+      top: 0;
+        z-index: 2;
+        font-size: 17rem;
+        width: 100%;
+        text-align: center;
+        padding-right: 5rem;
+        padding-left: 5rem;
+        color: #acacac59;
+        background: #f8efe4;
+      }
+
+    
+  }
+  margin-bottom: 20rem;
 }
 
 
@@ -441,7 +467,11 @@
   }
 }
 @keyframes zindex {
+  0%{
+    pointer-events:none;
+  }
    100%{
     z-index: 3;
+    pointer-events: all;
    }  
 }
