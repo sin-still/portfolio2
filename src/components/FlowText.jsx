@@ -6,7 +6,7 @@ const FlowText = () => {
     const pTag2Ref = useRef(null);
 
     useEffect(() => {
-        const textArr1 = 'PROJECT'.split(' ');
+        const textArr1 = 'PROJECT PROJECT PROJECT PROJECT'.split(' ');
         const textArr2 = 'ThankYou ThankYou ThankYou ThankYou ThankYou ThankYou'.split(' ');
 
         let count1 = 0;
@@ -61,9 +61,9 @@ const FlowText = () => {
     }, []);
 
     return (
-    <div className='FlowText'>
-        <div className="cover">
-            <p ref={pTag1Ref} className="first-parallel"></p>
+    <div className='FlowText flow-text-box'>
+        <div className="cover flow-text">
+            <p ref={pTag1Ref} className="first-parallel "></p>
         </div>
         {/* <div className="cover">
             <p ref={pTag2Ref} className="second-parallel"></p>

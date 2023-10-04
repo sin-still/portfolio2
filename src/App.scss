@@ -25,6 +25,29 @@
   align-items: center;
   justify-content: center;
 }
+.flow-text-box{
+  background-color: #fff;
+  position: relative;
+  z-index: 3;
+  padding: 5rem 0;
+  border-top: 10px double  #ddd;
+  border-bottom: 10px double  #ddd;
+  .flow-text{
+    /* background: #f8efe4; */
+    /* background: #b9ae8f; */
+    background: #222;
+    p{
+      
+    font-size: 17rem;
+    width: 100%;
+    text-align: center;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    color: #ffffff;
+    }
+
+  }
+}
 
 
 .App{
@@ -147,7 +170,9 @@
     transition: linear 1s;
     
     &.scrollActive{
-      background: #c0b59da1;
+      /* background: #c0b59da1; */
+      background: #dddddd94;
+      /* background: #000000c4; */
 
     }
     .container{
@@ -256,7 +281,8 @@
             position: absolute;
             width: 10rem;
             height: 10rem;
-            background: #c0b59d;
+            /* background: #c0b59d; */
+            background: url(../public/img/button.png) no-repeat center /cover;
             box-shadow: 0px 0px 10px #575757;
             border-radius: 50%;
             transition: 2s;
@@ -315,8 +341,9 @@
               }
 
               &.skill-item-1-0{
-                z-index: 2;
-                background: #c0b59da1;
+                z-index: 1;
+                background: none;
+
                 
               }
               &.skill-item-1-1{ 
@@ -381,31 +408,69 @@
     }
   }
   .Project{
-    height: 150rem;
     /* background: #f8efe4; */
-    background: #fff;
     justify-content: start;
     flex-direction: column;
     position: relative;
     z-index: 3;
-    padding-top: 9rem;
-    
-    >h2{
-      position: absolute;
-      top: 0;
-        z-index: 2;
-        font-size: 17rem;
+    padding-top: 2rem;
+    transition: linear .5s;
+    opacity: 0;
+    &.scrollActive{
+      /* background: #EEE2DE; */
+      background: #fff;
+      opacity: 1;
+    }
+  }
+  .Contact{
+    position: relative;
+    z-index: 3;
+    background-color: #fff;
+    padding-top: 45rem;
+    .container{
+      flex-direction: column;
+      .contact-banner{
         width: 100%;
         text-align: center;
-        padding-right: 5rem;
-        padding-left: 5rem;
-        color: #acacac59;
-        background: #f8efe4;
+        overflow: hidden;
+        .contact-banner-subText{
+          position: relative;
+          top: -25rem;
+          font-size: 3rem;
+          width: 100%;
+          text-align: left;
+          margin-left: 26rem;
+          &.bannerAnimation{ animation: scroll-text .3s ease 1  forwards; }
+        }
+        .contact-banner-text{
+          display: inline-block;
+          position: relative;
+          font-size: 15rem;
+          top: -25rem;
+          &.bannerAnimation{ animation: scroll-text .3s ease 1  forwards; }
+          $i: 1;
+          @while $i < 11 {
+            &.contact-banner-text#{$i} {
+              animation-delay: $i / 20 + s;
+            }
+            $i: $i + 1;
+          }
+          /* &.contact-banner-text1{}
+          &.contact-banner-text2{animation-delay: .2s;}
+          &.contact-banner-text3{animation-delay: .3s;}
+          &.contact-banner-text4{animation-delay: .4s;}
+          &.contact-banner-text5{animation-delay: .5s;}
+          &.contact-banner-text6{animation-delay: .6s;}
+          &.contact-banner-text7{animation-delay: .7s;}
+          &.contact-banner-text8{animation-delay: .8s;}
+          &.contact-banner-text9{animation-delay: .9s;}
+          &.contact-banner-text10{animation-delay: 1.0s;} */
+        }
       }
-
-    
+    }
   }
   margin-bottom: 20rem;
+
 }
 
 
@@ -474,4 +539,13 @@
     z-index: 3;
     pointer-events: all;
    }  
+}
+@keyframes scroll-text {
+  90%{
+    top: 4rem;
+  }
+
+  100%{
+    top: 0;
+  }
 }

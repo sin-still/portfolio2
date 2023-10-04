@@ -5,6 +5,8 @@ import MainPage from './components/MainPage';
 import About from './components/About';
 import Skills from './components/Skills';
 import Project from './components/Project';
+import FlowText from './components/FlowText';
+import Contact from './components/Contact';
 
 
 function App() {
@@ -14,7 +16,9 @@ function App() {
       <MainPage />
       <About />
       <Skills />
+      <FlowText />
       <Project />
+      <Contact />
     </div>
   );
 }

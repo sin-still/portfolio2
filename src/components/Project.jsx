@@ -11,7 +11,6 @@ const Project = () => {
    return (
       <Scroll className={'Project'} scrollActive={scrollActive} setScrollActive={setScrollActive}>
          {/* <div className="container"> */}
-            <h2><FlowText /></h2>
             <ProjectSwiper />
          {/* </div> */}
       </Scroll>

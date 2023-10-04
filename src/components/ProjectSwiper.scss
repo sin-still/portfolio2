@@ -4,8 +4,8 @@
    font-weight: normal;
    font-style: normal;
 }
-.swiper-pagination-horizontal{
-   
+.swiper-pagination-bullet-active{
+   background: #b39659 !important;
 }
 .swiper-slide{
    position: relative;
@@ -19,26 +19,31 @@
    height: 88rem;
    top: 0;
    left: 0;
-   margin-top: 22rem;
-   background: #924e2c15;
-   padding-bottom: 2rem;
    
+   padding-bottom: 2rem;
+   border-bottom: 2px solid #ddd;
    
    
 }
 .project-title{
    height: 10%;
-   background: #924e2c15;
+   /* background: #EEE2DE; */
+   background: #fff;
    text-align: center;
    padding: 2rem 0;
    font-size: 2.5rem;
    color: #4b4b4b;
-   border-bottom: 1px solid #fff;
+   
+   /* border-top: 1px solid #fff; */
+   border-top: 2px solid #ddd;
+   /* border-bottom: 1px solid #fff; */
+   border-bottom: 2px solid #ddd;
    
 }
 .project-item{
    display: flex;
    height: 80rem;
+   border-left: 1px solid #ddd;
    
    .project-imgBox{
       width: 40%;
@@ -68,7 +73,10 @@
    .project-info{
       width: 60%;
       padding: 5rem 10rem;
-      background: #f7e3d9;
+      /* background: #ffffff79; */
+      background: #fff;
+      border-left: 5px solid #ddd;
+      border-right: 2px solid #ddd;
       
       /* 인포타이틀 */
       .infoTitle{
@@ -88,7 +96,7 @@
             width: 140%;
             height: 2px;
             border-radius: 50%;
-            background: #fff;
+            background: #D7D0C1;
          }
       }
       /* 플렉스박스 */
