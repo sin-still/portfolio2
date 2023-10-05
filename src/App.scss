@@ -32,6 +32,7 @@
   padding: 5rem 0;
   border-top: 10px double  #ddd;
   border-bottom: 10px double  #ddd;
+  overflow: hidden;
   .flow-text{
     /* background: #f8efe4; */
     /* background: #b9ae8f; */
@@ -167,7 +168,7 @@
     position: relative;
     width: 100%;
     z-index: 3;
-    transition: linear 1s;
+    transition: ease 1s;
     
     &.scrollActive{
       /* background: #c0b59da1; */
@@ -186,12 +187,27 @@
         box-shadow: 5px 5px 10px #ddd;
         border-radius: 20px;
         opacity: 0;
+        position: relative;
+        transition: 1s;
         &.scrollActive{
           animation-name: opacity;
           animation-duration: 1s;
           animation-delay: 1s;
           animation-fill-mode: forwards;
 
+        }
+        &.abuotActive{
+          transform: rotateY(180deg);
+          
+        }
+        .about-box-item-box{
+          width: 100%;
+          height: 100%;
+          transition: 1s;
+          &.abuotActive{
+            display: none;
+
+          }
         }
         .about-item{
           width: 50%;
@@ -222,6 +238,77 @@
               margin-bottom: 2rem;
             }
           }
+        }
+        .about-hover-box{
+          position: absolute;
+          top: 0; left: 0;
+
+          display: none;
+          width: 100%;
+          height: 100%;
+          background: #ffffffc4;
+          border-radius: 20px;
+
+          cursor: pointer;
+          .about-hover-text{
+            font-size: 3rem;
+            transition: 1s;
+            &.abuotActive-text{
+              transform: rotateY(180deg);
+            }
+          }
+        }
+        .about-box-item-box1{
+          display: none;
+          transition-delay: .5s;
+          transition: 1s;
+          &.abuotActive1{
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: start;
+            transform: rotateY(180deg);
+            animation-name: opacity;
+            animation-duration: 1s;
+            
+            width: 100%;
+          }
+          .about-box-item{
+            width: 50%;
+            padding: 1rem 2rem;
+            .about-box-item-title{
+              justify-content: start;
+
+              font-size: 2.5rem;
+
+              padding-left: 2rem;
+              margin-left: 3rem;
+              margin-bottom: 2rem;
+              position: relative;
+              &::after{
+                content: "";
+
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+
+                width: .8rem;
+                height: .8rem;
+                display: block;
+                background: #222;
+                border-radius: 50%;
+
+              }
+            }
+            .about-box-item-content{
+              font-size: 2.3rem;
+            }
+          }
+
+        }
+        &:hover .about-hover-box{
+          display: flex;
         }
       }
       
@@ -455,16 +542,85 @@
             }
             $i: $i + 1;
           }
-          /* &.contact-banner-text1{}
-          &.contact-banner-text2{animation-delay: .2s;}
-          &.contact-banner-text3{animation-delay: .3s;}
-          &.contact-banner-text4{animation-delay: .4s;}
-          &.contact-banner-text5{animation-delay: .5s;}
-          &.contact-banner-text6{animation-delay: .6s;}
-          &.contact-banner-text7{animation-delay: .7s;}
-          &.contact-banner-text8{animation-delay: .8s;}
-          &.contact-banner-text9{animation-delay: .9s;}
-          &.contact-banner-text10{animation-delay: 1.0s;} */
+          
+        }
+      }
+      .contact-box{
+        margin-top: 10rem;
+        width: 100%;
+        .contact-info{
+          width: 50%;
+          flex-direction: column;
+          .contact-info-title{
+            width: 100%;
+            margin-bottom: 1rem;
+            font-size: 3rem;
+            font-weight: bold;
+          }
+          .contact-info-item{
+            width: 100%;
+            font-size: 2.5rem;
+            padding: 3rem 1rem;
+            .phone-address{
+              cursor: pointer;
+              display: inline-block;
+            }
+          }.phone-img-box{
+            width: 40rem;
+            height: 75rem;
+            .Modal{
+              animation-name: opacity;
+              animation-duration: 2s;
+            }
+            .phone-img{
+              position: absolute;
+              height: 100%;
+              &.phone-img1{
+                z-index: 2;
+                width: 57rem;
+                height: 75rem;
+                border-radius: 30px;
+              }
+              &.phone-img2{
+                width: 34rem;
+                height: 63rem;
+                border-radius: 30px;
+              }
+            }
+          }
+          
+        }
+        .contactForm{
+          width: 50%;
+          flex-direction: column;
+          padding: 2rem;
+          border: 2px solid #222;
+          .formLabel{
+            font-size: 2rem;
+            padding-bottom: 1rem;
+          }
+          .inputStyle{
+            width: 100%; 
+            margin-bottom: 1rem;
+            padding: 1rem .5rem;
+          }
+          .areaStyle{
+            width: 100%;
+            padding: 1rem .5rem;
+          }
+          .btnStyle{
+            width: 100%;
+            background: #484848;
+            color: #fff;
+            padding: 2rem 3rem;
+            margin-top: 2rem;
+            border: 1px solid #222;
+            cursor: pointer;
+            &:hover{
+              background: #222;
+              color: #fff;
+            }
+          }
         }
       }
     }

@@ -62,7 +62,7 @@ export default function ProjectSwiper() {
                     </div>
                   </div>
 
-                  <span className='infoTitle'>READ ME</span>
+                  <span className='infoTitle'>프로젝트 소개</span>
                   <p className='info-item'>
                     {item.desTitle}
                     <br />
