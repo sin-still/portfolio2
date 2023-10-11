@@ -3,7 +3,6 @@ import Scroll from './Scroll';
 import ContactForm from './ContactMail';
 import Modal from './Modal';
 
-
 const Contact = () => {
    const [ scrollActive, setScrollActive ] = useState();
    const [isModalOpen, setIsModalOpen] = useState(false);
@@ -40,7 +39,7 @@ const Contact = () => {
                   <Modal isOpen={isModalOpen} onClose={handleCloseModal} content={
                      <div className='phone-img-box flex'>
                         <img className='phone-img phone-img1' src="img/phone2.png" alt="" />
-                        <img className='phone-img phone-img2' src="img/kakao.png" alt="" />
+                        <img className='phone-img phone-img2' src="/img/kakao.png" alt="" />
                      </div>
                   } />
                   <div className="contact-info-title">&lt; Mail &#47; &gt;</div>
