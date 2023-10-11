@@ -39,7 +39,7 @@ const Contact = () => {
                   <Modal isOpen={isModalOpen} onClose={handleCloseModal} content={
                      <div className='phone-img-box flex'>
                         <img className='phone-img phone-img1' src="img/phone2.png" alt="" />
-                        <img className='phone-img phone-img2' src="/img/kakao.png" alt="" />
+                        <img className='phone-img phone-img2' src={`${process.env.PUBLIC_URL}/img/Kakao.png`} alt="" />
                      </div>
                   } />
                   <div className="contact-info-title">&lt; Mail &#47; &gt;</div>
