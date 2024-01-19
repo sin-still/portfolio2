@@ -1,19 +1,5 @@
 const data = [
-   {
-      image:"/img/NEXTPROJECT.png",
-      title: "VIVID",
-      link:'https://next-project-pi-eight.vercel.app/',
-      skill: [
-         "/img/skill/React-Light.svg",
-         "/img/skill/NextJS-Light.svg",
-         "/img/skill/Sass.svg",
-         "/img/skill/JavaScript.svg",
-      ],
-      personnel: 1,
-      part: "프론트전반",
-      desTitle: "NEXT를 사용해 처음으로 만든 사이트입니다.",
-      des: "넥스트와 버셀 몽고DB를 활용하여 회원가입, 로그인, 댓글, 문의, 카트 기능을 구현하였습니다.",
-   },
+   
    {
       image:"/img/SOSOMIRA.png",
       title: "SOSOMIRA",
@@ -28,6 +14,21 @@ const data = [
       part: "프론트전반 서버구축 호스팅",
       desTitle: "REACT 기반으로 만든 창작 사이트입니다.",
       des: "node.js사용해 서버를 구축하였고, 데이터베이스와 연동하여 업로드 기능과 회원가입 로그인 기능을 구현하였습니다. 그리고 버셀과 클라우드타입을 이용하여 배포하였습니다.",
+   },
+   {
+      image:"/img/NEXTPROJECT.png",
+      title: "VIVID",
+      link:'https://next-project-pi-eight.vercel.app/',
+      skill: [
+         "/img/skill/React-Light.svg",
+         "/img/skill/NextJS-Light.svg",
+         "/img/skill/Sass.svg",
+         "/img/skill/JavaScript.svg",
+      ],
+      personnel: 1,
+      part: "프론트전반",
+      desTitle: "NEXT를 사용해 처음으로 만든 사이트입니다.",
+      des: "넥스트와 버셀 몽고DB를 활용하여 회원가입, 로그인, 댓글, 문의, 카트 기능을 구현하였습니다.",
    },
 
    {
